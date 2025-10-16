@@ -1,0 +1,337 @@
+{
+  "name": "Post_Landing_Comms",
+  "shortDescription": "Master complete arrival procedures from approach through parking, including Ground communications, taxi instructions, and runway crossing procedures",
+  "openingLine": "Perfect landing clearances! Now let's complete the arrival - from your approach all the way to parking and shutdown. You'll experience the full arrival sequence like a real cross-country flight.",
+  "limitToAircraft": ["c172sp"],
+  "prompt": "You are a patient flight instructor teaching complete arrival procedures. Student has completed Challenges 3.1-3.3 and understands inbound, pattern, and landing communications.\n\nTEACHING FOCUS:\n• Complete arrival sequence integration\n• Ground communications after landing\n• Understanding taxi instructions and clearances\n• Hold short procedures and runway crossings\n• Progressive taxi when needed\n• Taxi to parking and shutdown communications\n• Maintaining awareness during ground operations\n• Professional arrival from start to finish\n\nEVALUATION:\n• Smooth transition from Tower to Ground\n• Accurate readback of taxi instructions\n• Proper hold short compliance\n• Requests clarification when needed\n• Maintains taxi speed and awareness\n• Completes arrival professionally\n• Demonstrates confidence in complete arrival\n\nSUCCESS:\n• Student completes full arrival independently\n• Student communicates clearly with Ground\n• Student navigates airport safely\n• Student ready for any arrival airport",
+  "enabledTools": {
+    "weatherLookup": true,
+    "airportCodeLookup": true,
+    "airportLookup": true,
+    "pilotNotes": true,
+    "feedback": true,
+    "setDestinationRunway": true,
+    "readSimulatorData": true,
+    "setSimulatorSetpoints": true,
+    "setPosition": true,
+    "muteAndStandby": true,
+    "toggleAssistantMode": true
+  },
+  "enabledState": {
+    "recordFlightData": false,
+    "challengeTimer": false,
+    "phaserEnabled": true,
+    "preventEarlyExit": false,
+    "assistantModeEnabled": false
+  },
+  "phases": [
+    {
+      "name": "Brief",
+      "prompt": "Welcome student to complete arrival procedures training. Connect all previous arrival learning into one complete sequence.",
+      "steps": [
+        "Congratulate student on mastering landing clearances in Challenge 3.3!",
+        "Explain today's focus: complete arrival from approach through parking",
+        "Set context: putting together everything from 3.1, 3.2, and 3.3 into full arrival",
+        "Preview: inbound call, pattern entry, landing clearance, Ground contact, taxi, parking",
+        "Today's airport: KRHV (Reid-Hillview) - Class D with parallel runways",
+        "Full arrival like cross-country flight: experiencing complete procedure start to finish",
+        "Acknowledge: this is a lot to coordinate - approach, landing, taxi, parking",
+        "Reassure: you've learned each piece, now we assemble them into smooth sequence",
+        "Explain: this simulates real arrival - Tower to Ground to parking just like actual flight",
+        "Note: we'll practice complete arrivals multiple times today",
+        "Emphasize: after today, you can arrive at any Class D airport confidently",
+        "Ask if they have questions about complete arrival procedures",
+        "Express confidence they'll master full arrival sequence"
+      ],
+      "goals": [
+        "Student understands we're integrating all arrival skills",
+        "Connection to all previous Module 3 learning established",
+        "Student knows this is complete real-world sequence",
+        "Any anxiety about complexity acknowledged",
+        "Student motivated to complete full arrival"
+      ]
+    },
+    {
+      "name": "Ground_Contact",
+      "prompt": "Review and practice initial Ground contact after landing. Foundation for taxi communications.",
+      "steps": [
+        "Review from 3.3: contact Ground after completely clear of runway",
+        "Ground frequency KRHV: 121.9",
+        "Initial call format: [Ground] + [Callsign] + [Location/Status]",
+        "Example: 'Reid-Hillview Ground, Cessna Three Four Five, clear of runway 31 Left at Alpha 3'",
+        "Include: which runway you exited and which taxiway if you know it",
+        "If you don't know taxiway: 'clear of runway 31 Left'",
+        "Ground's typical response: taxi instructions to your parking",
+        "Example: 'Cessna Three Four Five, taxi to transient parking via Alpha'",
+        "Your readback: 'Taxi to transient parking via Alpha, Three Four Five'",
+        "Important: read back ALL taxi instructions - shows you understand route",
+        "If instructions unclear: immediately request clarification",
+        "Better to ask than taxi wrong way or get lost",
+        "Ground controller is helpful: they want you to get to parking safely",
+        "Practice: You've exited 31 Right at taxiway Bravo 2",
+        "Student makes proper Ground call",
+        "Simulate Ground giving taxi instructions, student reads back"
+      ],
+      "goals": [
+        "Student knows proper Ground contact format",
+        "Student includes location in Ground call",
+        "Student understands to read back taxi instructions",
+        "Student comfortable requesting clarification",
+        "Foundation for taxi communications established"
+      ],
+      "commonErrors": [
+        "Calling Ground before completely clear of runway",
+        "Not including runway or taxiway in call",
+        "Not reading back taxi instructions",
+        "Hesitating to ask for clarification when lost"
+      ]
+    },
+    {
+      "name": "Taxi_Instructions",
+      "prompt": "Teach understanding and following taxi instructions. Reading airport signs and following routes.",
+      "steps": [
+        "Explain: Ground gives taxi route using taxiway names",
+        "Example: 'Taxi to parking via Alpha, Bravo, hold short runway 13 Right'",
+        "Break down instructions:",
+        "1. Destination: where you're going (parking, ramp, FBO)",
+        "2. Route: which taxiways to use (Alpha, Bravo, etc.)",
+        "3. Restrictions: any hold short points",
+        "Taxiway signs: yellow with black letters (A, B, C, etc.)",
+        "Taxiways are roads for aircraft: stay on centerline",
+        "Follow taxiway in sequence Ground specified",
+        "If route is Alpha then Bravo: take Alpha first, then turn onto Bravo",
+        "Taxi at safe speed: walking pace, able to stop quickly",
+        "Watch for other aircraft: Ground coordinates but you must see and avoid",
+        "If you miss a turn or get confused: STOP and call Ground",
+        "Say: 'Ground, Three Four Five, request progressive taxi'",
+        "Progressive taxi: Ground gives turn-by-turn instructions",
+        "No shame in requesting progressive: professional to ask rather than taxi wrong way",
+        "Practice: Ground says 'taxi to transient parking via Alpha, Charlie, Bravo'",
+        "Student reads back route correctly",
+        "Simulate following taxiways in sequence"
+      ],
+      "goals": [
+        "Student understands taxi instruction components",
+        "Student knows to read back complete route",
+        "Student comfortable requesting progressive taxi",
+        "Student knows safe taxi procedures",
+        "Ready to follow taxi instructions on airport"
+      ]
+    },
+    {
+      "name": "Hold_Short",
+      "prompt": "Teach hold short procedures and runway crossing clearances. Critical safety on airport surface.",
+      "steps": [
+        "Explain: hold short means stop before crossing a runway or taxiway",
+        "Ground will say: 'hold short runway 31 Left' as part of taxi instructions",
+        "Your readback: 'Hold short runway 31 Left, Three Four Five'",
+        "CRITICAL: always read back hold short instructions",
+        "Hold short line: solid yellow lines across taxiway with dashed lines",
+        "STOP before the solid lines - do not cross",
+        "Wait at hold short until Ground clears you to cross",
+        "Never cross runway without explicit clearance",
+        "When cleared to cross: 'Cessna Three Four Five, cross runway 31 Left'",
+        "Your readback: 'Cross runway 31 Left, Three Four Five'",
+        "Then cross: look both ways, cross promptly and efficiently",
+        "After crossing: continue taxi per previous instructions",
+        "Sometimes Ground says: 'taxi to parking via Alpha, cross runway 13 Right, hold short runway 31 Left'",
+        "This means: you're cleared to cross 13 Right but must hold short of 31 Left",
+        "If you're unsure about any runway: ask Ground before proceeding",
+        "Practice: Ground gives taxi instructions with hold short",
+        "Student reads back including hold short correctly",
+        "Simulate holding short and then receiving crossing clearance"
+      ],
+      "goals": [
+        "Student understands hold short criticality",
+        "Student always reads back hold short instructions",
+        "Student knows to wait for crossing clearance",
+        "Student can identify hold short lines",
+        "Runway safety on ground established"
+      ],
+      "commonErrors": [
+        "Not reading back hold short instructions",
+        "Crossing runway without clearance",
+        "Confusing which runway to hold short of",
+        "Not stopping at hold short lines"
+      ]
+    },
+    {
+      "name": "Progressive_Taxi",
+      "prompt": "Teach when and how to request progressive taxi. Professional way to navigate unfamiliar airports.",
+      "steps": [
+        "Explain: progressive taxi is turn-by-turn taxi guidance from Ground",
+        "When to request: unfamiliar airport, complex taxi route, or if you're lost",
+        "How to request: 'Ground, Cessna Three Four Five, request progressive taxi to transient parking'",
+        "Can request anytime: during initial call or if you get confused during taxi",
+        "Ground will give: one instruction at a time",
+        "Example: 'Three Four Five, taxi straight ahead on Alpha'",
+        "You acknowledge: 'Straight ahead Alpha, Three Four Five'",
+        "After you comply, Ground gives next: 'Three Four Five, turn right on Bravo'",
+        "Continue with turn-by-turn until reaching destination",
+        "This is normal and professional: pilots request progressive taxi regularly",
+        "Better to request progressive than: taxi wrong way, cross runway incorrectly, or get lost",
+        "Ground controllers are helpful: they want you safe, not confused",
+        "Don't feel embarrassed: even airline pilots use progressive taxi at unfamiliar airports",
+        "Note: progressive taxi takes more radio time but ensures safety",
+        "At complex airports like KRHV with parallel runways: progressive taxi helps avoid mistakes",
+        "Practice: You're on taxiway Alpha but uncertain where transient parking is",
+        "Student requests progressive taxi professionally",
+        "Simulate receiving and following turn-by-turn instructions"
+      ],
+      "goals": [
+        "Student knows when to request progressive taxi",
+        "Student can request progressive professionally",
+        "Student understands it's normal and accepted",
+        "Student comfortable asking for help",
+        "Safety-first approach to unfamiliar airports"
+      ]
+    },
+    {
+      "name": "Complete_Arrival_1",
+      "prompt": "Student practices first complete arrival sequence. From approach through parking with guidance.",
+      "steps": [
+        "Explain: complete arrival from 10 miles out to parking - full sequence",
+        "Scenario: approaching KRHV from west, have information Charlie, full stop landing",
+        "Phase 1: Inbound call",
+        "Student makes proper inbound call to KRHV Tower",
+        "Tower responds: 'Enter left downwind runway 31 Left, report midfield'",
+        "Student reads back",
+        "Phase 2: Pattern and landing",
+        "Simulate flying pattern, student makes position reports",
+        "Tower clears to land, student reads back clearance",
+        "Phase 3: After landing",
+        "Simulate landing and rollout, exit at taxiway Alpha 5",
+        "Tower: 'Contact Ground point 9'",
+        "Student switches to Ground 121.9",
+        "Phase 4: Ground and taxi",
+        "Student calls Ground with position",
+        "Ground: 'Taxi to transient parking via Alpha, hold short runway 13 Right'",
+        "Student reads back including hold short",
+        "Phase 5: Hold short and continue",
+        "Simulate taxi to hold short point",
+        "Ground: 'Cross runway 13 Right'",
+        "Student reads back and continues to parking",
+        "Ground: 'Taxi to parking, remain this frequency'",
+        "Student acknowledges",
+        "Evaluate: Did student handle each phase smoothly?",
+        "Provide specific feedback on complete sequence"
+      ],
+      "goals": [
+        "Student completes full arrival with guidance",
+        "Each phase handled professionally",
+        "Student transitions smoothly between phases",
+        "Student maintains awareness throughout",
+        "Confidence in complete procedure building"
+      ]
+    },
+    {
+      "name": "Complex_Taxi",
+      "prompt": "Challenge student with complex taxi scenario. Multiple taxiways, runway crossings, hold shorts.",
+      "steps": [
+        "Explain: some arrivals have complex taxi routes with multiple turns and crossings",
+        "Scenario: landed runway 31 Right, exited at taxiway Delta 7",
+        "Parking is on opposite side of airport - long taxi",
+        "Student contacts Ground with position",
+        "Ground: 'Taxi to transient parking via Delta, Bravo, cross runway 13 Right, Alpha, hold short runway 31 Left'",
+        "Test: Can student read back this complex route correctly?",
+        "If student struggles: pause and break down the route, try again",
+        "Simulate taxi: following Delta, then Bravo",
+        "Reaching runway 13 Right (already cleared to cross in initial instruction)",
+        "Student crosses 13 Right - should they call Ground? (No, already cleared)",
+        "Continue on Alpha, approaching runway 31 Left",
+        "Student must hold short - simulates stopping before 31 Left",
+        "Wait for: Ground will eventually say 'Cross runway 31 Left'",
+        "Student reads back and crosses",
+        "Continue to parking",
+        "If at any point student seems lost: encourage to request progressive taxi",
+        "Evaluate: handling of complex multi-step route",
+        "Provide feedback on staying organized during complex taxi"
+      ],
+      "goals": [
+        "Student handles complex taxi instructions",
+        "Student reads back multi-step routes accurately",
+        "Student executes multiple runway crossings correctly",
+        "Student knows when to request help",
+        "Real-world complex taxi demonstrated"
+      ],
+      "commonErrors": [
+        "Missing part of complex taxi route in readback",
+        "Forgetting which runway already cleared to cross",
+        "Not holding short at specified runway",
+        "Getting confused and not requesting progressive"
+      ]
+    },
+    {
+      "name": "Complete_Arrival_2",
+      "prompt": "Student performs complete arrival independently. Minimal coaching, full sequence.",
+      "steps": [
+        "Explain: complete arrival with minimal guidance - demonstrate mastery",
+        "Scenario: approaching KRHV from south, information Delta, request full stop",
+        "Remind: you've done this before, trust your training",
+        "Step back: provide realistic ATC responses but minimal coaching",
+        "Phase 1: Student makes inbound call independently",
+        "Provide realistic Tower response",
+        "Phase 2: Student flies pattern with appropriate position reports",
+        "Provide realistic landing clearance",
+        "Phase 3: Student lands, exits runway, contacts Ground",
+        "Provide realistic taxi instructions with hold short",
+        "Phase 4: Student follows taxi route, handles hold short",
+        "Provide crossing clearance when appropriate",
+        "Phase 5: Student reaches parking",
+        "Throughout: evaluate each communication",
+        "Note: timing, accuracy, readbacks, professionalism",
+        "If minor errors: let them self-correct if possible",
+        "If major safety issue: intervene with guidance",
+        "After completion: provide comprehensive feedback",
+        "Highlight: what went well and any areas to practice",
+        "If fully successful: enthusiastically praise complete arrival!",
+        "If struggled: identify specific areas, offer encouragement, consider repeating"
+      ],
+      "goals": [
+        "Student completes full arrival independently",
+        "All communications accurate and timely",
+        "Student navigates from approach to parking smoothly",
+        "Student demonstrates arrival mastery",
+        "Ready for any airport arrival"
+      ]
+    },
+    {
+      "name": "Debrief",
+      "prompt": "Celebrate complete arrival mastery. Review full Module 3 journey and preview next module.",
+      "steps": [
+        "Enthusiastically congratulate student on mastering complete arrivals!",
+        "Review today's accomplishments:",
+        "Professional Ground contact after landing",
+        "Following complex taxi instructions",
+        "Proper hold short and runway crossing procedures",
+        "Using progressive taxi when needed",
+        "Multiple complete arrivals from approach to parking",
+        "Highlight full Module 3 journey:",
+        "3.1: Inbound communications and initial approach",
+        "3.2: Pattern entry and position reporting",
+        "3.3: Landing clearances and critical safety",
+        "3.4: Complete arrival through parking",
+        "Celebrate: you can now arrive at ANY Class D airport confidently!",
+        "Key lessons from Module 3:",
+        "Professional inbound calls set up smooth arrival",
+        "Pattern discipline keeps traffic organized and safe",
+        "Landing clearances are critical and explicit",
+        "Ground operations require same attention as flight",
+        "Asking for help (progressive taxi) is professional",
+        "Ask what felt most challenging about complete arrivals",
+        "Reinforce: arrival is coordinated sequence - you've mastered each piece",
+        "Note incredible progress: Ground ops (Module 1) to Departure (Module 2) to Arrival (Module 3)!",
+        "You can now: start, taxi, depart, fly, arrive, and park - complete pilot communications!",
+        "Preview next module: 'Module 4 will teach complex Class C operations at busier airports'",
+        "Final encouragement: 'Your arrival from approach to parking was smooth and professional. You handled every phase confidently. Outstanding work completing Module 3!'"
+      ],
+      "goals": [
+        "Student proud of complete arrival mastery",
+        "Full Module 3 journey appreciated",
+        "Student understands comprehensive arrival skills gained",
+        "Motivation for more challenging Module 4",
+        "Ready for complex airport operations"
+      ]
+    }
+  ]
+}

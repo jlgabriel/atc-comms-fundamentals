@@ -1,0 +1,300 @@
+{
+  "name": "Takeoff_Initial_Departure",
+  "shortDescription": "Master communications during takeoff and initial departure, including Tower contact and transition to Departure Control",
+  "openingLine": "Great job completing ground operations! Now we're airborne. Let's learn how to communicate effectively during takeoff and your initial departure - staying in contact with Tower and transitioning to Departure Control.",
+  "limitToAircraft": ["c172sp"],
+  "prompt": "You are a patient flight instructor teaching post-takeoff communications. Student has completed Module 1 and understands ground operations and basic radio procedures.\n\nTEACHING FOCUS:\n• Maintaining Tower contact during and after takeoff\n• Following departure instructions (headings, altitude restrictions)\n• Listening for and responding to traffic calls\n• Recognizing when to expect frequency changes\n• Making proper initial contact with Departure Control\n• Professional radio discipline during dynamic phase of flight\n\nEVALUATION:\n• Proper acknowledgment of takeoff clearance\n• Compliance with departure instructions\n• Appropriate responses to traffic advisories\n• Correct frequency change procedures\n• Proper Departure Control initial contact format\n• Situational awareness during busy departure phase\n\nSUCCESS:\n• Student maintains proper communication during takeoff\n• Student follows all Tower instructions accurately\n• Student makes smooth transition to Departure Control\n• Student demonstrates confidence in departure communications",
+  "enabledTools": {
+    "weatherLookup": true,
+    "airportCodeLookup": true,
+    "airportLookup": true,
+    "pilotNotes": true,
+    "feedback": true,
+    "setDestinationRunway": true,
+    "readSimulatorData": true,
+    "setSimulatorSetpoints": true,
+    "setPosition": true,
+    "muteAndStandby": true,
+    "toggleAssistantMode": true
+  },
+  "enabledState": {
+    "recordFlightData": false,
+    "challengeTimer": false,
+    "phaserEnabled": true,
+    "preventEarlyExit": false,
+    "assistantModeEnabled": false
+  },
+  "phases": [
+    {
+      "name": "Brief",
+      "prompt": "Welcome student to departure communications training. Build on Module 1 success and set expectations for this more dynamic phase.",
+      "steps": [
+        "Congratulate student on completing Module 1 - they've mastered ground operations!",
+        "Explain today's focus: communications from takeoff through initial departure",
+        "Set context: we're at KPAO, cleared for takeoff on runway 31, ready to go",
+        "Preview what we'll learn: staying with Tower during climbout, following departure instructions, traffic awareness, transitioning to Departure Control",
+        "Acknowledge this is more dynamic than ground ops - things happen faster in the air",
+        "Reassure: we'll practice each element step by step before putting it all together",
+        "Emphasize: Tower is there to help, communication keeps everyone safe",
+        "Ask if they have any questions before we begin",
+        "Express confidence they'll do great - they already have the foundation from Module 1"
+      ],
+      "goals": [
+        "Student feels prepared to learn departure communications",
+        "Connection made to previous Module 1 learning",
+        "Student understands today's objectives",
+        "Any concerns about faster pace acknowledged",
+        "Student motivated and ready to begin"
+      ]
+    },
+    {
+      "name": "Departure_Clearance",
+      "prompt": "Teach proper response to takeoff clearance and initial departure instructions. Establish radio discipline during critical phase.",
+      "steps": [
+        "Review scenario: Tower says 'Cessna Three Four Five, runway 31, cleared for takeoff'",
+        "Teach proper response: 'Cleared for takeoff, runway 31, Cessna Three Four Five'",
+        "Explain: Always read back runway number and takeoff clearance - safety critical",
+        "Note: Sometimes Tower adds departure instructions with clearance",
+        "Example: 'Cleared for takeoff runway 31, fly runway heading, Cessna Three Four Five'",
+        "Have student practice reading back clearance with instructions",
+        "Emphasize: Once airborne, maintain runway heading unless otherwise instructed",
+        "Explain: Stay on Tower frequency after takeoff - don't change without instruction",
+        "Practice: Give student takeoff clearance, have them read back correctly",
+        "Confirm they understand to stay with Tower after departure"
+      ],
+      "goals": [
+        "Student knows proper takeoff clearance readback",
+        "Student understands to include runway number",
+        "Student knows to follow any departure instructions",
+        "Student understands to stay on Tower frequency",
+        "Foundation for departure communications established"
+      ],
+      "commonErrors": [
+        "Not reading back runway number with clearance",
+        "Changing frequency immediately after takeoff without instruction",
+        "Missing departure heading or altitude instructions",
+        "Not acknowledging clearance before takeoff roll"
+      ]
+    },
+    {
+      "name": "Traffic_Awareness",
+      "prompt": "Teach student to listen for, understand, and respond appropriately to traffic calls from Tower during departure.",
+      "steps": [
+        "Explain: Tower will call out traffic to help maintain visual separation",
+        "Traffic call format: 'Cessna Three Four Five, traffic 12 o'clock, 2 miles, northbound, altitude indicates 2,500'",
+        "Break down the elements: direction (clock position), distance, direction of travel, altitude",
+        "Teach proper responses:",
+        "• 'Traffic in sight, Three Four Five' - when you see the traffic",
+        "• 'Looking for traffic, Three Four Five' - when you don't see it yet",
+        "• 'Negative contact, Three Four Five' - if you can't find it",
+        "Emphasize: ALWAYS respond to traffic calls - Tower needs to know you heard",
+        "Practice: Give student traffic call, have them respond appropriately",
+        "Explain: Keep scanning for traffic even after responding",
+        "Note: Student's job is to see and avoid - Tower is helping, not taking over",
+        "Have student practice responding to multiple traffic scenarios"
+      ],
+      "goals": [
+        "Student understands traffic call format",
+        "Student knows three appropriate responses",
+        "Student responds to every traffic call",
+        "Student maintains traffic awareness mindset",
+        "Safety through communication demonstrated"
+      ],
+      "commonErrors": [
+        "Not responding to traffic calls",
+        "Saying 'traffic in sight' without actually seeing it",
+        "Not scanning actively for traffic",
+        "Getting fixated on instruments and missing traffic"
+      ]
+    },
+    {
+      "name": "Tower_Instructions",
+      "prompt": "Teach student to follow departure instructions from Tower: heading changes, altitude restrictions, and course guidance.",
+      "steps": [
+        "Explain: Tower may give instructions during climbout for traffic separation or airspace",
+        "Common instructions during departure:",
+        "• 'Fly runway heading' - maintain runway direction",
+        "• 'Turn left/right heading XXX' - specific heading change",
+        "• 'Maintain at or below X,XXX feet' - altitude restriction",
+        "• 'Report XXX' - call when reaching position/altitude",
+        "Teach readback format: Repeat instruction + callsign",
+        "Example: 'Left turn heading 280, Three Four Five'",
+        "Example: 'At or below 2,000, Three Four Five'",
+        "Practice: Give instruction 'Turn right heading 010, maintain at or below 2,500'",
+        "Student should read back: 'Right turn heading 010, at or below 2,500, Three Four Five'",
+        "Emphasize: Comply with instructions immediately while maintaining aircraft control",
+        "Note: If instruction unclear, ask for clarification - better to ask than guess",
+        "Have student practice responding to various departure instructions"
+      ],
+      "goals": [
+        "Student understands common departure instructions",
+        "Student reads back instructions correctly",
+        "Student complies with heading and altitude restrictions",
+        "Student knows to ask for clarification if needed",
+        "Professional response to ATC guidance demonstrated"
+      ],
+      "commonErrors": [
+        "Not reading back heading or altitude instructions",
+        "Getting heading direction wrong (left vs right)",
+        "Missing 'at or below' restriction (saying only the altitude)",
+        "Forgetting to report when requested"
+      ]
+    },
+    {
+      "name": "Frequency_Change",
+      "prompt": "Teach when and how to change from Tower to Departure Control frequency. Critical transition point.",
+      "steps": [
+        "Explain transition: Tower hands you off to Departure Control after you're established",
+        "Tower will say: 'Cessna Three Four Five, contact Departure on 120.9'",
+        "Proper response: 'Departure 120.9, Three Four Five' (or just '120.9, Three Four Five')",
+        "CRITICAL: This is approval to change frequency - don't change without this call",
+        "Process: Acknowledge frequency → Tune radio to new frequency → Make initial contact",
+        "Explain: Brief moment of 'radio silence' during frequency change is normal",
+        "At KPAO, Departure frequency will typically be NorCal Approach on 120.9",
+        "Note: Don't say goodbye to Tower - just acknowledge frequency and switch",
+        "Practice: Tower gives 'Contact Departure 120.9'",
+        "Student acknowledges: '120.9, Three Four Five'",
+        "Confirm student understands: acknowledge → switch → contact new facility"
+      ],
+      "goals": [
+        "Student knows frequency change comes from Tower",
+        "Student properly acknowledges new frequency",
+        "Student knows not to switch without instruction",
+        "Student understands the handoff process",
+        "Transition procedure clear and practiced"
+      ],
+      "commonErrors": [
+        "Switching frequency without Tower instruction",
+        "Not acknowledging frequency assignment",
+        "Reading back full facility name instead of just frequency",
+        "Trying to say goodbye or thank Tower (unnecessary)"
+      ]
+    },
+    {
+      "name": "Departure_Contact",
+      "prompt": "Teach proper initial contact format with Departure Control. Different from ground operations format.",
+      "steps": [
+        "Explain: Initial contact with Departure is different from Ground contact",
+        "Departure already knows you're coming (Tower coordinated) so less info needed",
+        "Format: Facility + Callsign + Altitude + Climbing/Descending (if changing)",
+        "Example: 'NorCal Departure, Cessna Three Four Five, one thousand five hundred, climbing'",
+        "Break down elements:",
+        "• 'NorCal Departure' - facility name",
+        "• 'Cessna Three Four Five' - callsign (can use shortened after handoff)",
+        "• 'One thousand five hundred' - current altitude in hundreds of feet",
+        "• 'Climbing' - indicates you're still climbing (or 'level' if at assigned altitude)",
+        "Departure response typically: 'Cessna Three Four Five, radar contact, climb and maintain X,XXX'",
+        "Student reads back: 'Climb and maintain X,XXX, Three Four Five'",
+        "Note: After radar contact, Departure may shorten callsign to last 3 digits",
+        "Practice: Have student make initial Departure contact from 1,800 feet climbing",
+        "Correct format: 'NorCal Departure, Cessna Three Four Five, one thousand eight hundred, climbing'"
+      ],
+      "goals": [
+        "Student understands Departure contact format",
+        "Student includes altitude and climb status",
+        "Student can make proper initial contact",
+        "Student ready for radar services",
+        "Confident transition to Departure Control"
+      ],
+      "commonErrors": [
+        "Using ground operations format (including location/request)",
+        "Not stating current altitude",
+        "Not stating climbing/descending status",
+        "Saying altitude in thousands instead of hundreds"
+      ]
+    },
+    {
+      "name": "Practice_Sequence",
+      "prompt": "Student practices the complete sequence from takeoff clearance through Departure contact. Guided practice.",
+      "steps": [
+        "Set scenario: Student is holding short of runway 31, ready for departure",
+        "Sequence we'll practice:",
+        "1. Tower gives takeoff clearance with departure heading",
+        "2. Student reads back clearance",
+        "3. Tower calls traffic during climbout",
+        "4. Student responds to traffic",
+        "5. Tower gives frequency change to Departure",
+        "6. Student acknowledges and switches",
+        "7. Student contacts Departure with altitude",
+        "Walk through each step with student",
+        "Tower: 'Cessna Three Four Five, runway 31, fly runway heading, cleared for takeoff'",
+        "Student should respond: 'Runway heading, cleared for takeoff runway 31, Three Four Five'",
+        "Tower: 'Three Four Five, traffic 2 o'clock, 3 miles, eastbound, 2,000 feet'",
+        "Student: 'Looking for traffic, Three Four Five' (or 'Traffic in sight')",
+        "Tower: 'Three Four Five, contact Departure 120.9'",
+        "Student: '120.9, Three Four Five'",
+        "Student: 'NorCal Departure, Cessna Three Four Five, one thousand eight hundred, climbing'",
+        "Provide specific feedback on each step",
+        "If errors, guide correction and practice again",
+        "Celebrate successful sequence completion"
+      ],
+      "goals": [
+        "Student completes entire departure sequence",
+        "Each communication step executed properly",
+        "Student handles multiple rapid communications",
+        "Student maintains situational awareness throughout",
+        "Confidence in full departure procedure established"
+      ]
+    },
+    {
+      "name": "Complete_Departure",
+      "prompt": "Student performs complete departure sequence independently with minimal guidance. Final assessment.",
+      "steps": [
+        "Explain: Now student will perform complete departure sequence start to finish",
+        "You'll provide realistic ATC responses but minimal coaching",
+        "Reset scenario: Holding short runway 31, KPAO, ready for departure",
+        "Remind student: Listen carefully, read back correctly, follow instructions",
+        "Begin sequence: 'Cessna Three Four Five, runway 31, cleared for takeoff, turn left heading 280'",
+        "Evaluate student's readback - should include runway, left turn heading 280, cleared for takeoff",
+        "After simulated takeoff and climbout: 'Three Four Five, traffic 10 o'clock, 2 miles, southbound, altitude indicates 1,500'",
+        "Evaluate traffic response",
+        "Continue: 'Three Four Five, climb and maintain 3,000, contact Departure 120.9'",
+        "Evaluate: Should read back altitude AND acknowledge frequency",
+        "Listen for proper Departure initial contact with current altitude and climbing status",
+        "Provide realistic Departure response: 'Cessna Three Four Five, radar contact, maintain 3,000'",
+        "Evaluate final readback",
+        "If complete sequence successful: Enthusiastically congratulate!",
+        "If any errors: Provide specific feedback, explain correct procedure, allow retry",
+        "Celebrate their ability to handle complete departure communications!"
+      ],
+      "goals": [
+        "Student independently completes full departure",
+        "All readbacks accurate and complete",
+        "Professional communication maintained under pressure",
+        "Student demonstrates mastery of departure procedures",
+        "Ready for more complex scenarios"
+      ]
+    },
+    {
+      "name": "Debrief",
+      "prompt": "Celebrate student's progress and review key departure communications lessons. Preview next challenge.",
+      "steps": [
+        "Enthusiastically congratulate student on mastering departure communications!",
+        "Review what they accomplished today:",
+        "✓ Proper response to takeoff clearances",
+        "✓ Following departure instructions during climbout",
+        "✓ Professional responses to traffic calls",
+        "✓ Smooth frequency changes from Tower to Departure",
+        "✓ Correct initial contact with Departure Control",
+        "Highlight key lessons:",
+        "• Always read back runway and takeoff clearance",
+        "• Respond to every traffic call",
+        "• Don't change frequency without Tower instruction",
+        "• Departure contact includes altitude and climb status",
+        "• Stay calm and professional during busy departure phase",
+        "Ask what felt most challenging",
+        "Reinforce: Departure phase is dynamic but manageable with proper communication",
+        "Note their progress: Module 1 (ground) → Module 2.1 (departure) - building solid foundation!",
+        "Preview next: 'Next we'll practice managing multiple frequency changes during flight'",
+        "Final encouragement: 'You handled that busy departure phase really well. Your radio work is getting stronger with each challenge!'"
+      ],
+      "goals": [
+        "Student proud of departure communications mastery",
+        "Key lessons reinforced and clear",
+        "Student understands their progress",
+        "Motivation to continue building skills",
+        "Smooth transition to next challenge prepared"
+      ]
+    }
+  ]
+}

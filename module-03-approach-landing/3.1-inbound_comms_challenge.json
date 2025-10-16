@@ -1,0 +1,299 @@
+{
+  "name": "Inbound_Communications",
+  "shortDescription": "Master inbound communications when approaching your destination airport, including position reports and initial approach instructions",
+  "openingLine": "You've mastered departure and en route operations! Now let's learn the arrival phase - communicating with your destination airport. Professional inbound calls keep you safe and in the flow of traffic.",
+  "limitToAircraft": ["c172sp"],
+  "prompt": "You are a patient flight instructor teaching arrival communications. Student has completed Challenges 2.1-2.4 and understands departure and en route operations.\n\nTEACHING FOCUS:\n• Transitioning mindset from en route to arrival phase\n• Making proper initial inbound calls with position and ATIS\n• Understanding and responding to approach instructions\n• Maintaining awareness of airport area and traffic\n• Professional sequencing with other aircraft\n• Building confidence for pattern entry\n\nEVALUATION:\n• Clear position reports relative to airport\n• Proper inclusion of ATIS information\n• Accurate readback of approach instructions\n• Maintains aircraft control during communications\n• Demonstrates situational awareness\n• Professional tone appropriate for arrival phase\n\nSUCCESS:\n• Student makes confident inbound calls\n• Student understands approach instructions\n• Student aware of traffic sequencing\n• Student ready for pattern entry procedures",
+  "enabledTools": {
+    "weatherLookup": true,
+    "airportCodeLookup": true,
+    "airportLookup": true,
+    "pilotNotes": true,
+    "feedback": true,
+    "setDestinationRunway": true,
+    "readSimulatorData": true,
+    "setSimulatorSetpoints": true,
+    "setPosition": true,
+    "muteAndStandby": true,
+    "toggleAssistantMode": true
+  },
+  "enabledState": {
+    "recordFlightData": false,
+    "challengeTimer": false,
+    "phaserEnabled": true,
+    "preventEarlyExit": false,
+    "assistantModeEnabled": false
+  },
+  "phases": [
+    {
+      "name": "Brief",
+      "prompt": "Welcome student to arrival communications training. Connect to previous en route success and prepare for inbound procedures.",
+      "steps": [
+        "Congratulate student on completing en route operations in Module 2!",
+        "Explain today's focus: arrival communications and approaching destination airport",
+        "Set context: arrival phase requires different mindset - transitioning from cruise to approach",
+        "Preview what we'll learn: position reporting, inbound calls, ATIS usage, approach instructions",
+        "Acknowledge this is exciting - getting ready to land after flight!",
+        "Explain importance: proper inbound calls integrate you into traffic flow safely",
+        "Note: Tower is preparing for your arrival - they need to know where you are and what you need",
+        "Reassure: we'll practice step by step, building confidence for actual arrivals",
+        "Today's airport: KSQL (San Carlos) - Class D with single runway",
+        "Ask if they have questions about arrival communications",
+        "Express confidence they'll master this critical phase"
+      ],
+      "goals": [
+        "Student understands arrival phase importance",
+        "Connection to previous en route learning established",
+        "Student knows what to expect today",
+        "Any anxiety about landing phase acknowledged",
+        "Student motivated to learn inbound procedures"
+      ]
+    },
+    {
+      "name": "Inbound_Mindset",
+      "prompt": "Teach mental transition from en route to arrival phase. Different priorities and awareness needed.",
+      "steps": [
+        "Explain: arriving at airport requires shift in focus and priorities",
+        "En route mindset: navigation, altitude, frequency changes, general awareness",
+        "Arrival mindset: specific airport location, pattern awareness, traffic sequencing, landing prep",
+        "Key change: you're now part of airport traffic flow - must integrate smoothly",
+        "Tower's perspective: they're managing multiple aircraft arrivals, departures, pattern traffic",
+        "Your job: provide clear position, follow instructions precisely, maintain awareness",
+        "Important: get ATIS before calling tower - shows you're prepared",
+        "Start thinking about: runway in use, wind, pattern direction, traffic",
+        "Mental checklist: Where am I? Where's the airport? What's ATIS? What do I need?",
+        "This mindset shift happens about 10-15 miles from airport",
+        "Ask: What differences do you notice between en route and arrival phases?",
+        "Confirm understanding of mental transition needed"
+      ],
+      "goals": [
+        "Student understands arrival requires different mindset",
+        "Student knows to get ATIS before calling",
+        "Student aware of tower's traffic management role",
+        "Student begins thinking about integration into traffic",
+        "Foundation for professional inbound calls established"
+      ]
+    },
+    {
+      "name": "Position_Reports",
+      "prompt": "Teach how to report position relative to airport. Clear position reports are critical for tower.",
+      "steps": [
+        "Explain: tower needs to know exactly where you are to sequence you properly",
+        "Position format: distance and direction from airport",
+        "Example: '5 miles south' or '8 miles northwest' or '10 miles east'",
+        "Use cardinal directions: north, south, east, west, northeast, southwest, etc.",
+        "Distance: whole numbers, typically 5-15 miles when making initial call",
+        "How to determine: use GPS, landmarks, or VOR if available",
+        "Be accurate: if you're 7 miles, say 7 miles (not 5 or 10)",
+        "Tower uses this to: spot you on radar, sequence with traffic, give instructions",
+        "Practice: If approaching from southeast at 6 miles, what do you say?",
+        "Answer should be: '6 miles southeast'",
+        "Common error: being vague ('south' without distance) or inaccurate",
+        "Emphasize: precision in position reporting shows professionalism",
+        "Have student practice several position reports from different locations"
+      ],
+      "goals": [
+        "Student knows position report format",
+        "Student can determine and report accurate position",
+        "Student understands tower uses this for sequencing",
+        "Professional position reporting demonstrated",
+        "Ready to include position in inbound calls"
+      ],
+      "commonErrors": [
+        "Reporting vague position without distance",
+        "Using approximate distance when can be more precise",
+        "Confusing direction (saying north when actually northeast)",
+        "Forgetting to report position at all"
+      ]
+    },
+    {
+      "name": "Initial_Call",
+      "prompt": "Teach format for initial inbound call to tower. Complete call includes all essential information.",
+      "steps": [
+        "Explain: initial inbound call follows specific format with all key info",
+        "Format: [Tower] + [Callsign] + [Position] + [Request] + [ATIS]",
+        "Example: 'San Carlos Tower, Cessna Three Four Five, 6 miles south, inbound for landing with information Alpha'",
+        "Break it down:",
+        "1. 'San Carlos Tower' - who you're calling",
+        "2. 'Cessna Three Four Five' - who you are",
+        "3. '6 miles south' - where you are",
+        "4. 'inbound for landing' - what you want (or 'full stop' or 'touch and go')",
+        "5. 'with information Alpha' - confirms you have current ATIS",
+        "All in one transmission - complete but concise",
+        "Tower response will acknowledge and give instructions",
+        "Note: saying 'inbound for landing' is standard, can also say 'inbound full stop'",
+        "Practice: You're 8 miles east of KSQL, have information Bravo, want full stop",
+        "Student should say: 'San Carlos Tower, Cessna Three Four Five, 8 miles east, inbound full stop with information Bravo'",
+        "Provide feedback on completeness and flow",
+        "Have student practice several inbound calls from different positions"
+      ],
+      "goals": [
+        "Student knows complete inbound call format",
+        "Student can make smooth, professional inbound call",
+        "All essential information included",
+        "Student confident in initial contact",
+        "Ready for real approach scenarios"
+      ],
+      "commonErrors": [
+        "Forgetting to include ATIS information",
+        "Not stating position clearly",
+        "Forgetting to state intentions (landing, full stop, etc)",
+        "Making call too wordy or too brief"
+      ]
+    },
+    {
+      "name": "ATIS_Importance",
+      "prompt": "Emphasize critical importance of getting ATIS before calling tower. Professional standard.",
+      "steps": [
+        "Explain: ATIS (Automatic Terminal Information Service) is recorded airport information",
+        "ATIS includes: weather, active runway, winds, altimeter, notices, information letter",
+        "Get ATIS BEFORE calling tower - shows you're prepared and professional",
+        "ATIS frequency for KSQL: typically separate frequency (check chart)",
+        "Information letter: changes hourly, identified as 'Alpha', 'Bravo', 'Charlie', etc.",
+        "When you say 'with information Alpha', tower knows you have current conditions",
+        "If you DON'T have ATIS, tower has to give you all that information - wastes time",
+        "Tower appreciates pilots who get ATIS first - shows professionalism",
+        "What to note from ATIS: active runway, wind, altimeter, information letter",
+        "Write down key info: 'RWY 30, Wind 310 at 8, Alt 30.15, Info Charlie'",
+        "In radio call, you only say: 'with information Charlie'",
+        "If ATIS says 'Runway 30', you're expecting to land on runway 30",
+        "Practice: Listen to (simulated) ATIS and extract key information",
+        "Confirm student understands to ALWAYS get ATIS before inbound call"
+      ],
+      "goals": [
+        "Student understands ATIS importance",
+        "Student knows to get ATIS before calling tower",
+        "Student can extract key information from ATIS",
+        "Student includes ATIS letter in inbound call",
+        "Professional preparation habit established"
+      ]
+    },
+    {
+      "name": "Approach_Instruct",
+      "prompt": "Teach how to receive and respond to approach instructions from tower. Understanding what tower needs you to do.",
+      "steps": [
+        "Explain: after your inbound call, tower gives approach instructions",
+        "Common tower response: acknowledge you, give pattern entry instruction",
+        "Example: 'Cessna Three Four Five, San Carlos Tower, enter left downwind runway 30, report midfield downwind'",
+        "Breaking down tower instructions:",
+        "1. They acknowledge your callsign",
+        "2. They tell you which pattern to enter (left/right downwind, base, straight-in)",
+        "3. They tell you which runway",
+        "4. They tell you when to report back",
+        "Your response: read back the key instruction",
+        "Readback: 'Left downwind runway 30, will report midfield, Three Four Five'",
+        "Sometimes tower says: 'report 2 mile final' or 'report left base'",
+        "Sometimes tower gives: 'Runway 30, make left traffic' (your choice of entry)",
+        "Important: read back runway and any restrictions",
+        "If unsure what tower wants: ask for clarification immediately",
+        "Practice: Tower says 'enter right downwind runway 12, report midfield'",
+        "Student should read back correctly",
+        "Provide several practice scenarios with different instructions"
+      ],
+      "goals": [
+        "Student understands common approach instructions",
+        "Student knows what to read back",
+        "Student can follow pattern entry instructions",
+        "Student comfortable asking for clarification",
+        "Ready for actual approach communications"
+      ],
+      "commonErrors": [
+        "Not reading back runway number",
+        "Confusion about which pattern leg to enter",
+        "Not noting when to report back to tower",
+        "Reading back too much or too little"
+      ]
+    },
+    {
+      "name": "Sequencing",
+      "prompt": "Teach traffic sequencing concepts. Tower manages multiple aircraft - student must fit into flow.",
+      "steps": [
+        "Explain: you're rarely the only aircraft - tower is sequencing multiple planes",
+        "Tower might say: 'Number 2 following a Cessna on 2 mile final'",
+        "This means: there's one aircraft ahead of you, you're second to land",
+        "Your job: look for and follow that traffic",
+        "Response: 'Number 2, looking for traffic, Three Four Five'",
+        "When you spot traffic: 'Traffic in sight, Three Four Five'",
+        "Sometimes tower says: 'extend downwind, I'll call your base' - need spacing",
+        "Extend downwind means: keep flying downwind until tower tells you to turn",
+        "This creates space between you and aircraft ahead",
+        "Be patient: extending downwind is normal and safe",
+        "Tower's job: ensure safe separation between all aircraft",
+        "Your job: follow instructions and maintain visual separation when able",
+        "If you lose sight of traffic: tell tower immediately",
+        "Practice scenario: Tower sequences you as number 3",
+        "Student should respond appropriately and demonstrate understanding",
+        "Emphasize: sequencing is normal, professional, and safe"
+      ],
+      "goals": [
+        "Student understands traffic sequencing",
+        "Student knows how to respond to sequence assignments",
+        "Student comfortable with 'extend downwind' instructions",
+        "Student knows to report traffic in sight",
+        "Ready for multi-aircraft environment"
+      ]
+    },
+    {
+      "name": "Practice_Inbound",
+      "prompt": "Student practices complete inbound sequence from initial call through approach instructions. Full scenario.",
+      "steps": [
+        "Explain: we'll practice complete inbound communication sequence",
+        "Scenario: you're 7 miles southeast of KSQL, have information Delta, want full stop",
+        "Step 1: Make your inbound call",
+        "Student should: 'San Carlos Tower, Cessna Three Four Five, 7 miles southeast, inbound full stop with information Delta'",
+        "Provide tower response: 'Cessna Three Four Five, San Carlos Tower, enter left downwind runway 30, report midfield'",
+        "Step 2: Student reads back",
+        "Student should: 'Left downwind runway 30, will report midfield, Three Four Five'",
+        "Add complexity: 'Three Four Five, you're number 2, following a Piper on left base'",
+        "Step 3: Student responds to sequence",
+        "Student should: 'Number 2, looking for traffic, Three Four Five'",
+        "Simulate: 'Traffic in sight? It's at your 11 o'clock, 2 miles'",
+        "Step 4: Student reports traffic",
+        "Evaluate entire sequence: inbound call, readback, sequencing response",
+        "Provide specific feedback on each element",
+        "If successful: enthusiastically praise professional performance",
+        "If any issues: guide correction and practice again",
+        "Run through sequence 2-3 times with variations"
+      ],
+      "goals": [
+        "Student completes full inbound sequence",
+        "All communications clear and professional",
+        "Student handles multiple tower instructions smoothly",
+        "Student maintains situational awareness throughout",
+        "Confidence in arrival communications demonstrated"
+      ]
+    },
+    {
+      "name": "Debrief",
+      "prompt": "Celebrate inbound communications mastery. Review key lessons and preview pattern entry procedures.",
+      "steps": [
+        "Enthusiastically congratulate student on mastering inbound communications!",
+        "Review what they accomplished:",
+        "Understanding arrival mindset transition",
+        "Accurate position reporting",
+        "Complete professional inbound calls",
+        "Getting and using ATIS information",
+        "Understanding and following approach instructions",
+        "Managing traffic sequencing",
+        "Highlight key lessons:",
+        "Always get ATIS before calling tower",
+        "Report position accurately with distance and direction",
+        "Include all elements in inbound call",
+        "Read back runway and pattern instructions",
+        "Be patient with sequencing and spacing",
+        "Ask what felt most challenging about arrival communications",
+        "Reinforce: professional inbound calls set you up for smooth pattern entry",
+        "Note progress: Ground ops to Departure to En route to now Arrival - nearly complete pilot!",
+        "Preview next: 'Next we'll learn pattern entry and position reporting in the traffic pattern'",
+        "Final encouragement: 'Your inbound calls were professional and complete. Tower knows exactly where you are and what you need. Excellent work!'"
+      ],
+      "goals": [
+        "Student proud of arrival communications skills",
+        "Key inbound procedures reinforced",
+        "Student understands their progress",
+        "Motivation to continue with pattern procedures",
+        "Ready for Challenge 3.2 on pattern entry"
+      ]
+    }
+  ]
+}
