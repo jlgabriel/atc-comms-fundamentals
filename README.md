@@ -356,29 +356,6 @@ All challenges in this repository have been validated using the official Shirley
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! If you'd like to improve a challenge or add new ones:
-
-1. Fork this repository
-2. Create a new branch (`git checkout -b feature/improved-challenge`)
-3. Make your changes
-4. Validate your challenge at https://airplane.team/fly/create
-5. Commit your changes (`git commit -am 'Improved Challenge 1.1'`)
-6. Push to the branch (`git push origin feature/improved-challenge`)
-7. Open a Pull Request
-
-### Contribution Guidelines
-
-- Maintain progressive difficulty structure
-- Ensure all challenges validate successfully
-- Include clear learning objectives
-- Test challenges before submitting
-- Follow existing naming conventions
-- Keep phraseology aligned with FAA standards
-
----
-
 ## 📚 Additional Resources
 
 - [FlyShirley Website](https://airplane.team/fly)
@@ -408,27 +385,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/YOUR-USERNAME/atc-comms-fundamentals/issues)
 - **Discord**: Join the [FlyShirley Discord](https://airplane.team/discord) for community support
-- **Email**: Replace with your contact email
-
----
-
-## 🗺️ Roadmap
-
-### Current Version: 1.0.0 (All Modules Complete) ✅
-- ✅ Module 1: Ground Operations (4 challenges)
-- ✅ Module 2: Departure and En Route (4 challenges)
-- ✅ Module 3: Approach and Landing (4 challenges)
-- ✅ Module 4: Complex Scenarios (4 challenges)
-- ✅ Module 5: Special Situations & Mastery (3 challenges)
-
-**🎉 COURSE COMPLETE - 19/19 challenges validated and ready!**
-
-### Future Plans
-- 📋 Class B operations module (KSFO)
-- 📋 International phraseology differences
-- 📋 Non-towered airport communications course
-- 📋 Advanced topics: pop-up IFR clearances, special VFR
-- 📋 Spanish language version
 
 ---
 
